@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="2dp"
+    android:elevation="2dp"
+    android:outlineAmbientShadowColor="@color/colorPrimary"
+    android:id="@+id/rootLayout">
+
+    <LinearLayout
+        android:id="@+id/lyt_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/travelImage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:id="@+id/travelRute"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Pekanbaru - Dumai" />
+
+        <TextView
+            android:id="@+id/travelPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            tools:text="Rp.150.000/Tiket"/>
+
+        <TextView
+            android:id="@+id/travelDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:maxLines="1"
+            android:textColor="@color/colorOrange"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            tools:text="Waktu Berangkat: 30 Nov 2020 - Siang"/>
+
+        <TextView
+            android:id="@+id/travelTrayek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            tools:text="Waktu Berangkat: 30 Nov 2020 - Siang"/>
+
+        <Button
+            android:id="@+id/btnChooseTravel"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_pilih_travel"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+</androidx.cardview.widget.CardView>

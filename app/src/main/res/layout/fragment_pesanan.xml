@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.PesananFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/text_bantuan_cek_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_bantuan_cek_pesanan"
+                android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/input_kode_transaksi"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorPay"
+                    android:hint="@string/hint_kode_bayar"/>
+
+
+                <Button
+                    android:id="@+id/btn_verifikasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/text_btn_verifikasi"
+                    android:textColor="@color/colorWhite"
+                    android:clickable="true"/>
+
+
+                <LinearLayout
+                    android:id="@+id/lytStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_status_hasil"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/penumpang_nama"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="faiz"
+                        android:textStyle="bold"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/penumpang_tipe_bayar"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Tunai"
+                        android:textStyle="normal"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/penumpang_status_bayar"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" tools:text="faiz"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorPay"/>
+
+                    <ImageView
+                        android:id="@+id/imageViewBuktiBayar"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/buttonUploadBuktiBayar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Bukti Bayar"
+                        android:layout_marginTop="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:visibility="gone"
+                        android:clickable="true"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+</FrameLayout>

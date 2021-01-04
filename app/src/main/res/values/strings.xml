@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Travel AJAP</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_nav_beranda">Beranda</string>
+    <string name="title_nav_pesanan">Pesanan Saya</string>
+    <string name="title_nav_bantua">Bantuan</string>
+    <string name="title_nav_akun">Akun</string>
+    <string name="text_pilih_kota_asal">Pilih Kota Asal</string>
+    <string name="hint_kota_asal">Masukkan Kota Asal</string>
+    <string name="text_pilih_tanggal_perjalanan">Tanggal Perjalanan</string>
+    <string name="text_pilih_waktu_berangkat">Waktu Berangkat</string>
+    <string name="btn_cari_travel">Cari Travel</string>
+    <string name="ads_space">Space Iklan</string>
+    <string name="text_total_armada">5 Travel Ditemukan</string>
+    <string name="armada_kode_bsj">BSJ</string>
+    <string name="text_waktu_berangkat">Pagi - 10.00 WIB</string>
+    <string name="text_harga_armada">Rp. 125.000</string>
+    <string name="text_jenis_armada">Kijang Inova</string>
+    <string name="text_nopol_armada">BM 4574 WW</string>
+    <string name="text_tujuan_armada">Solok</string>
+    <string name="hint_tanggal_perjalanan">Pilih Tanggal Perjalanan</string>
+    <string name="text_pilih_kota_tujuan">Pilih Kota Tujuan</string>
+    <string name="hint_waktu_keberangkatan">Pilih Jam Keberangkatan</string>
+    <string name="btn_pilih_travel">Pilih Tempat Duduk</string>
+    <string name="text_fragment_blank">Tidak Ada Layout Yang Disediakan</string>
+    <string name="text_bantuan_cek_pesanan">Masukkan ID Pesanan anda, untuk cek status pembayaran.</string>
+    <string name="hint_kode_bayar">Masukkan ID Pesanan</string>
+    <string name="text_btn_verifikasi">Cek Status Pembayaran</string>
+    <string name="text_status_nama">Nama Penumpang</string>
+    <string name="text_status_hasil">HASIL:</string>
+    <string name="btn_pesan">Selanjutnya</string>
+
+    <string-array name="jk">
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <string-array name="jenis_pembayaran">
+        <item>Agen</item>
+        <item>Transfer</item>
+    </string-array>
+
+</resources>

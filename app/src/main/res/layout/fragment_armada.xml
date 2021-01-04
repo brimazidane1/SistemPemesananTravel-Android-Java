@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.ArmadaFragment">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="16dp">
+
+       <ScrollView
+           android:id="@+id/scrollView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="25dp">
+
+               <LinearLayout
+                   android:id="@+id/lyt_result"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:id="@+id/lb_total_armada"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="@string/text_total_armada"/>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/lyt_card_item"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_marginTop="20dp">
+
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/item_card"
+                       android:layout_width="match_parent"
+                       android:layout_height="120dp"
+                       android:padding="4dp"
+                       app:cardElevation="8dp"
+                       app:cardCornerRadius="4dp">
+
+                       <LinearLayout
+                           android:id="@+id/lyr_card_item"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="vertical">
+
+                           <LinearLayout
+                               android:id="@+id/lyt_kode_armada"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical">
+
+                               <TextView
+                                   android:id="@+id/text_kode_armada"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/armada_kode_bsj"
+                                   android:textSize="12pt"
+                                   android:textStyle="bold"
+                                   android:textAllCaps="true"/>
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/lyt_waktu_berangkat"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="horizontal"
+                               android:weightSum="2">
+
+                               <TextView
+                                   android:id="@+id/text_waktu_berangkat"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/text_waktu_berangkat"
+                                   android:textSize="5pt"
+                                   android:layout_weight="1"
+                                   android:gravity="left"
+                                   />
+
+                               <TextView
+                                   android:id="@+id/text_harga_armada"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/text_harga_armada"
+                                   android:textSize="5pt"
+                                   android:layout_weight="1"
+                                   android:gravity="right"
+                                   />
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/lyt_armada_detail"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="horizontal"
+                               android:weightSum="2">
+
+                               <TextView
+                                   android:id="@+id/text_jenis_armada"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/text_jenis_armada"
+                                   android:textSize="5pt"
+                                   android:layout_weight="1"
+                                   android:gravity="left"
+                                   />
+
+                               <TextView
+                                   android:id="@+id/text_nopol_armada"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/text_nopol_armada"
+                                   android:textSize="5pt"
+                                   android:layout_weight="1"
+                                   android:gravity="right"
+                                   />
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/lyt_tujuan"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical">
+
+                               <TextView
+                                   android:id="@+id/text_tujuan_armada"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/text_tujuan_armada"
+                                   android:textSize="8pt"
+                                   android:textStyle="normal"/>
+
+
+                           </LinearLayout>
+                       </LinearLayout>
+
+
+
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/item_card2"
+                       android:layout_width="match_parent"
+                       android:layout_height="120dp"
+                       android:padding="4dp"
+                       app:cardElevation="8dp"
+                       app:cardCornerRadius="4dp">
+
+                       <LinearLayout
+                           android:id="@+id/lyr_card_item2"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="vertical">
+
+                           <LinearLayout
+                               android:id="@+id/lyt_kode_armada2"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical">
+
+                               <TextView
+                                   android:id="@+id/text_kode_armada2"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/armada_kode_bsj"
+                                   android:textSize="12pt"
+                                   android:textStyle="bold"
+                                   android:textAllCaps="true"/>
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/lyt_waktu_berangkat2"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="horizontal"
+                               android:weightSum="2">
+
+                               <TextView
+                                   android:id="@+id/text_waktu_berangkat2"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/text_waktu_berangkat"
+                                   android:textSize="5pt"
+                                   android:layout_weight="1"
+                                   android:gravity="left"
+                                   />
+
+                               <TextView
+                                   android:id="@+id/text_harga_armada2"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/text_harga_armada"
+                                   android:textSize="5pt"
+                                   android:layout_weight="1"
+                                   android:gravity="right"
+                                   />
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/lyt_armada_detail2"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="horizontal"
+                               android:weightSum="2">
+
+                               <TextView
+                                   android:id="@+id/text_jenis_armada2"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/text_jenis_armada"
+                                   android:textSize="5pt"
+                                   android:layout_weight="1"
+                                   android:gravity="left"
+                                   />
+
+                               <TextView
+                                   android:id="@+id/text_nopol_armada2"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/text_nopol_armada"
+                                   android:textSize="5pt"
+                                   android:layout_weight="1"
+                                   android:gravity="right"
+                                   />
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/lyt_tujuan2"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical">
+
+                               <TextView
+                                   android:id="@+id/text_tujuan_armada2"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/text_tujuan_armada"
+                                   android:textSize="8pt"
+                                   android:textStyle="normal"/>
+
+
+                           </LinearLayout>
+                       </LinearLayout>
+
+
+
+                   </androidx.cardview.widget.CardView>
+
+               </LinearLayout>
+
+
+
+
+
+           </LinearLayout>
+
+
+
+       </ScrollView>
+
+   </RelativeLayout>
+
+</FrameLayout>

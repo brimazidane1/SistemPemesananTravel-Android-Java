@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_beranda"
+        android:title="@string/title_nav_beranda"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/menu_pesanan"
+        android:title="@string/title_nav_pesanan"
+        android:icon="@drawable/ic_pesanan"/>
+    <item
+        android:id="@+id/menu_bantuan"
+        android:title="@string/title_nav_bantua"
+        android:icon="@drawable/ic_help"/>
+    <item
+        android:id="@+id/menu_akun"
+        android:title="@string/title_nav_akun"
+        android:icon="@drawable/ic_person"/>
+
+</menu>
